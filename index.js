@@ -129,11 +129,7 @@ function handleLogin() {
 	setTime();
 	scheduledJob = schedule.scheduleJob('0 * * * * *', setTime);
 }
-function handleDisconnect() {
-	if (scheduledJob) {
-		scheduledJob.cancel();
-	}
-}
+
 
 
 bot.on("error", err => {
