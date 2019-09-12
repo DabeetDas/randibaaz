@@ -24,9 +24,10 @@ global.schedule       = require('node-schedule');
 
 
 /* Configuration */
-global.botConfig      = require('./config/bot.js');
 global.colorConfig    = require('./config/colors.js');
 global.defaultConfig  = require('./config/defaults.js');
+bot.prefix = "?"
+
 
 /* Commands */
 global.timeCommand    = require('./commands/time.js');
